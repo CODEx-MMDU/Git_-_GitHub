@@ -147,3 +147,72 @@ After pushing your changes, you can submit a pull request to the original reposi
 7. Click **Create pull request** again.
 
 Congratulations! You've now learned how to clone a repository, fork a repository, make changes, push them back to your repo, and create a pull request to contribute to the original project.
+
+
+# Hosting a Website with GitHub Pages
+
+GitHub Pages allows you to host a website directly from a GitHub repository. In this guide, you will learn how to create and publish a live website using HTML, CSS, and JavaScript with GitHub Pages.
+
+## Step 1: Prepare Your Website
+
+Before you begin, ensure you have a basic website project ready. Your project should at least include:
+
+- `index.html`: The main HTML file.
+- `style.css`: (Optional) CSS file for styling your website.
+- `script.js`: (Optional) JavaScript file for adding interactivity.
+
+Make sure your website is working locally on your computer.
+
+## Step 2: Create a GitHub Repository
+
+1. Log in to your GitHub account.
+2. Click the "+" icon in the top-right corner and select **New repository**.
+3. Name your repository. For user or organization sites, name the repository as `<username>.github.io` or `<organization>.github.io`. For project sites, you can choose any name.
+4. Optionally, add a description.
+5. Choose whether the repository will be public or private.
+6. Click **Create repository**.
+
+## Step 3: Upload Your Website to the Repository
+
+### Option 1: Using the GitHub Interface
+
+1. In your repository, click the **Add file** button and select **Upload files**.
+2. Drag and drop your website files (`index.html`, `style.css`, `script.js`, and any other assets) into the browser window or use the file chooser.
+3. Commit the changes by entering a commit message and clicking **Commit changes**.
+
+### Option 2: Using Git
+
+1. Clone the repository to your local machine:
+
+   ```
+   git clone https://github.com/username/username.github.io
+   ```
+
+2. Move your website's files into the cloned repository directory.
+3. Use Git to add, commit, and push your files:
+
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push -u origin master
+   ```
+
+## Step 4: Enable GitHub Pages
+
+1. In your repository, navigate to **Settings**.
+2. Scroll down to the **GitHub Pages** section.
+3. Under **Source**, select the branch you want to publish your site from, usually `master` or `main`.
+4. Click **Save**.
+5. GitHub will provide a URL to access your website, e.g., `https://username.github.io`.
+
+## Step 5: Access Your Live Website
+
+After enabling GitHub Pages, your website will be live on the web at the provided URL, which is usually `https://username.github.io` for user or organization sites or `https://username.github.io/repository` for project sites.
+
+## Additional Tips
+
+- **Custom Domain**: You can use a custom domain with GitHub Pages by adding a CNAME file to your repository and configuring your domain's DNS settings.
+- **Jekyll Themes**: GitHub Pages supports Jekyll, a static site generator. You can choose from pre-built themes or create your own to customize your website.
+- **GitHub Actions**: For more complex workflows, such as building your site with build tools or frameworks before publishing, consider using GitHub Actions.
+
+Congratulations! You've successfully hosted your HTML, CSS, and JavaScript website using GitHub Pages.
