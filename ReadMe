@@ -1,33 +1,25 @@
-Git is a **distributed version control system (DVCS)**, meaning it tracks changes in computer files and allows collaboration among developers working on the same project. Here's a breakdown of its key aspects:
+Git is a distributed version control system (DVCS), meaning it tracks changes in computer files and allows collaboration among developers working on the same project. Here's a breakdown of its key aspects:
 
-**What it does:**
+What it does:
 
 * **Tracks changes:** Git keeps a history of all changes made to a project's files, allowing you to see who made what changes and when.
 * **Collaboration:**  Multiple developers can work on the same project simultaneously without interfering with each other.
 * **Versioning:** Git allows you to revert back to any previous version of your project if something goes wrong.
 * **Efficiency:** Compared to older methods, Git uses efficient storage techniques to avoid redundant data storage.
 
-**How it works:**
+How it works:
 
 * **Snapshots:** Instead of storing changes between versions, Git takes "snapshots" of the project's entire state at specific points, known as commits.
 * **Local repository:** Each developer has a complete copy of the project history on their local machine, making collaboration easier even without constant internet access.
 * **Central repository (optional):** Projects can also have a central repository (often called a "remote") hosted online, allowing developers to share their changes and work together seamlessly.
 
-**Benefits:**
+Benefits:
 
 * **History tracking:** Provides a clear picture of how the project evolved over time.
 * **Collaboration:** Streamlines teamwork by avoiding conflicts and confusion.
 * **Security:** Allows reverting to previous versions if errors are introduced.
 * **Scalability:** Handles large and complex projects efficiently.
 
-**Popularity:**
 
-Git is the **most popular version control system** in the world, widely used in software development, but also applicable to other file-based projects like documentation or design assets.
 
-Remember, this is a simplified explanation. Git can be quite complex, but understanding these core concepts will give you a good starting point. 
 
-Here are some resources for further learning:
-
-* **Git SCM official website:** [https://git-scm.com/](https://git-scm.com/)
-* **Atlassian Git Tutorial:** [https://www.atlassian.com/git/tutorials](https://www.atlassian.com/git/tutorials)
-* **"What is Git? Explained in 2 Minutes!" video:** [https://www.youtube.com/watch?v=8JJ101D3knE](https://www.youtube.com/watch?v=8JJ101D3knE)
