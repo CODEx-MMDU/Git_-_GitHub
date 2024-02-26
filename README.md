@@ -58,3 +58,92 @@ git config --global user.email "youremail@example.com"
 - [GitHub Learning Lab](https://lab.github.com/)
 - [Pro Git Book](https://git-scm.com/book/en/v2)
 
+
+# Working with Git and GitHub: Cloning, Forking, and Contributing
+
+Welcome! This README is designed to guide you through the processes of cloning a repository, forking a repository, making changes, and contributing those changes back to the original project via a pull request on GitHub.
+
+## Cloning a Repository
+
+**Cloning** a repository means making a copy of the repository on your local machine. This allows you to work on the project files locally.
+
+### How to Clone a Repository
+
+1. Navigate to the main page of the repository on GitHub.
+2. Above the list of files, click the **Code** button.
+3. To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard icon. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard icon.
+4. Open your terminal.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type `git clone`, and then paste the URL you copied earlier.
+   
+   ```
+   git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   ```
+
+7. Press **Enter** to create your local clone.
+
+## Forking a Repository
+
+**Forking** a repository allows you to freely experiment with changes without affecting the original project. It creates a copy of the repository in your GitHub account.
+
+### How to Fork a Repository
+
+1. Navigate to the GitHub page of the repository you want to fork.
+2. In the top-right corner of the page, click the **Fork** button.
+3. You will be redirected to your forked version of the repository.
+
+## Making Changes and Pushing to Your Fork
+
+After forking a repository, you can make changes to your fork and push them to GitHub.
+
+### Making Changes
+
+1. Navigate to the cloned directory if you haven’t already:
+
+   ```
+   cd YOUR-REPOSITORY
+   ```
+
+2. Create a new branch to make your changes on:
+
+   ```
+   git checkout -b your-new-branch-name
+   ```
+
+3. Make your changes in the repository files with your preferred text editor or IDE.
+
+4. After making changes, stage them for commit:
+
+   ```
+   git add .
+   ```
+
+5. Commit the changes with a meaningful message:
+
+   ```
+   git commit -m "Add your commit message"
+   ```
+
+### Pushing Changes
+
+1. Push your branch and changes to your fork on GitHub:
+
+   ```
+   git push origin your-new-branch-name
+   ```
+
+## Creating a Pull Request
+
+After pushing your changes, you can submit a pull request to the original repository to propose your changes.
+
+### How to Create a Pull Request
+
+1. Navigate to your fork on GitHub.
+2. Click the **Pull requests** tab and then click **New pull request**.
+3. In the "base repository" dropdown menu, select the original repository you’d like to contribute to. In the "base" dropdown menu, select the branch of the original repository you’d like to contribute to. In the "head repository" dropdown menu, select your fork, and in the "compare" dropdown menu, select your branch.
+4. Review the changes and ensure they are correct.
+5. Click **Create pull request**.
+6. Add a title and description to your pull request explaining your changes.
+7. Click **Create pull request** again.
+
+Congratulations! You've now learned how to clone a repository, fork a repository, make changes, push them back to your repo, and create a pull request to contribute to the original project.
