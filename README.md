@@ -58,6 +58,3 @@ git config --global user.email "youremail@example.com"
 - [GitHub Learning Lab](https://lab.github.com/)
 - [Pro Git Book](https://git-scm.com/book/en/v2)
 
-## Conclusion
-
-This README provides a foundational overview to get you started with Git and GitHub. As you explore more, you'll discover the vast potential of these tools in managing, sharing, and collaborating on code projects. Happy coding!
