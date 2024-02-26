@@ -216,3 +216,78 @@ After enabling GitHub Pages, your website will be live on the web at the provide
 - **GitHub Actions**: For more complex workflows, such as building your site with build tools or frameworks before publishing, consider using GitHub Actions.
 
 Congratulations! You've successfully hosted your HTML, CSS, and JavaScript website using GitHub Pages.
+
+### Reverting Changes in Git and GitHub
+
+Reverting changes is a common task in version control systems. Here's how you can revert changes in Git (locally) and GitHub (remotely).
+
+#### Reverting Changes Locally Using Git
+
+To undo changes in your local repository, you have several options depending on what exactly you want to revert:
+
+1. **Undo Uncommitted Changes**
+
+   - To discard changes in a specific file:
+
+     ```bash
+     git checkout -- <file>
+     ```
+
+   - To discard all uncommitted changes (use with caution):
+
+     ```bash
+     git reset --hard
+     ```
+
+2. **Revert the Last Commit**
+
+   - To undo the last commit and keep the changes:
+
+     ```bash
+     git reset --soft HEAD~1
+     ```
+
+   - To undo the last commit and discard the changes:
+
+     ```bash
+     git reset --hard HEAD~1
+     ```
+
+3. **Create a New Commit to Revert Previous Commit**
+
+   - If the commit has already been pushed or you want to preserve the history:
+
+     ```bash
+     git revert <commit>
+     ```
+   
+   This command creates a new commit that undoes the changes made by `<commit>`.
+
+#### Reverting Changes on GitHub
+
+To revert changes that have been pushed to GitHub, you can use the GitHub UI to create a revert pull request:
+
+1. Navigate to the **Commits** section of your repository on GitHub.
+2. Find the commit you want to revert.
+3. Click on the `...` menu to the right of the commit and select **Revert**.
+4. GitHub will create a new branch and prepare a pull request that reverts the selected commit.
+5. Review the changes and create the pull request.
+6. Merge the pull request to apply the revert.
+
+### Difference Between Git and GitHub
+
+**Git** and **GitHub** are related but distinct tools used for version control and collaboration in software development. Understanding their differences is key:
+
+- **Git**:
+  - Git is a distributed version control system (DVCS) that allows you to track changes in source code during software development.
+  - It's a command-line tool that helps you manage the history of your project's files and folders.
+  - Git operates locally, enabling users to work on their code offline, commit changes, create branches, and merge code without needing a central server.
+  - Git's primary focus is version control and code sharing.
+
+- **GitHub**:
+  - GitHub is a web-based hosting service for Git repositories. It adds a graphical interface on top of Git, making it more user-friendly.
+  - It facilitates collaboration, allowing multiple people to work on the same project from anywhere in the world.
+  - GitHub provides additional features for project management, including issue tracking, pull requests, code review, and more.
+  - It integrates with various tools and services and supports CI/CD pipelines, documentation, and more.
+
+In summary, Git is the tool that manages your source code history, while GitHub is a platform for hosting and collaborating on Git repositories.
