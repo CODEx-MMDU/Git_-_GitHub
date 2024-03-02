@@ -24,7 +24,7 @@ Welcome to our GitHub Workshop! This README will serve as your guide to understa
 2. Alternatively, you can use Homebrew by running `brew install git` in the terminal.
 3. Verify the installation by opening the Terminal and typing `git --version`.
 
-### Linux
+### Linux 🐧
 
 1. Open a terminal window.
 2. Update your package list with `sudo apt-get update` (Debian/Ubuntu) or `sudo yum update` (Fedora).
