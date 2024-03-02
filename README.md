@@ -1,4 +1,4 @@
-# GitHub Workshop README
+# GitHub Workshop 📁
 
 Welcome to our GitHub Workshop! This README will serve as your guide to understanding the basics of Git and GitHub, including how to install Git on your machine, and an overview of important Git commands you'll be using throughout this workshop. Let's dive in!
 
