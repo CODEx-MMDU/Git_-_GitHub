@@ -10,7 +10,7 @@ Welcome to our GitHub Workshop! This README will serve as your guide to understa
 
 ## Installing Git
 
-### Windows
+### Windows 🪟
 
 1. Download the latest Git for Windows installer from the [Git website](https://git-scm.com/download/win).
 2. Run the installer and follow the steps provided by the setup wizard. Leave all the default settings unless you have a specific need to change them.
